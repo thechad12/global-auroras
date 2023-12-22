@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import {ChakraProvider} from '@chakra-ui/react';
 
-function App() {
+const App: React.FC<{}> = () => {
   return (
     <ChakraProvider>
       <div className="App">

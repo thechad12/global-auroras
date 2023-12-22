@@ -1,10 +1,11 @@
-import React from 'react';
 import {  
     Ion,  
     Terrain, 
     Viewer 
 } from 'cesium';
 import "cesium/Build/Cesium/Widgets/widgets.css";
+
+declare const window: any;
 
 window.CESIUM_BASE_URL = '/static/Cesium';
 
@@ -14,9 +15,9 @@ const viewer = new Viewer('cesiumContainer', {
     terrain: Terrain.fromWorldTerrain(),
 });
 
-const WorldViewer = () => {
+const WorldViewer: React.FC<{}> = () => {
     return (
-        <div className='celsiumContainer'>
+        <div className='cesiumContainer'>
         </div>
     )
 }
